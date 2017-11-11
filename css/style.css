@@ -33,7 +33,9 @@ li {
     }
 }
 
-
+.head {
+    grid-row: 1;
+}
 /*.wrapper {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
@@ -47,6 +49,12 @@ li {
     grid-row: 1;
     height: 100vh;
     background-color: #fff;
+    opacity: 0.2;
+    height: 100vh;
+    background: linear-gradient( rgba(241, 196, 15, 0.45), rgba(241, 196, 15, 0.45)), url("img/team-386673_1920crop.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .header-bg {
