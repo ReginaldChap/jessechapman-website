@@ -1,0 +1,171 @@
+/* START - BASIC TYPOGRAPHY */
+
+ul {
+    margin-left: 1em;
+    padding-left: 0;
+}
+
+li {
+    padding-left: .6em;
+}
+
+
+/* END - BASIC TYPOGRAPHY */
+
+
+/* START - THE BASIC GRID */
+
+.container {
+    width: 100%;
+    margin: 0;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 20% repeat(12, 1fr) 20%;
+    grid-auto-rows: minmax(100px, auto);
+}
+
+@media screen and (min-width: 500px) {
+    .wrapper {
+        grid-template-columns: 20% repeat(12, 1fr) 20%;
+        grid-auto-rows: minmax(100px, auto);
+    }
+}
+
+
+/*.wrapper {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+}*/
+
+.header {
+    grid-column-start: 1;
+    grid-column-end: span 16;
+    grid-row: 1;
+    height: 100vh;
+    background-color: #fff;
+}
+
+.header-bg {
+    opacity: 0.2;
+    height: 100vh;
+    background: linear-gradient( rgba(241, 196, 15, 0.45), rgba(241, 196, 15, 0.45)), url("img/team-386673_1920crop.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+/* START - CONTENT GRID */
+
+.content-wrapper {
+    grid-column: 2 / span 12;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 20px;
+    grid-auto-rows: minmax(100px, auto);
+}
+
+.col-1 {
+    grid-column-end: span 1;
+}
+
+.col-2 {
+    grid-column-end: span 2;
+}
+
+.col-3 {
+    grid-column-end: span 3;
+}
+
+.col-4 {
+    grid-column-end: span 4;
+}
+
+.col-5 {
+    grid-column-end: span 5;
+}
+
+.col-6 {
+    grid-column-end: span 6;
+}
+
+.col-7 {
+    grid-column-end: span 7;
+}
+
+.col-8 {
+    grid-column-end: span 8;
+}
+
+.col-9 {
+    grid-column-end: span 9;
+}
+
+.col-10 {
+    grid-column-end: span 10;
+}
+
+.col-11 {
+    grid-column-end: span 11;
+}
+
+.col-12 {
+    grid-column-end: span 12;
+}
+
+.start-col-1 {
+    grid-column-start: 1;
+}
+
+.start-col-2 {
+    grid-column-start: 2;
+}
+
+.start-col-3 {
+    grid-column-start: 3;
+}
+
+.start-col-4 {
+    grid-column-start: 4;
+}
+
+.start-col-5 {
+    grid-column-start: 5;
+}
+
+.start-col-6 {
+    grid-column-start: 6;
+}
+
+.start-col-7 {
+    grid-column-start: 7;
+}
+
+.start-col-8 {
+    grid-column-start: 8;
+}
+
+.start-col-9 {
+    grid-column-start: 9;
+}
+
+.start-col-10 {
+    grid-column-start: 10;
+}
+
+.start-col-11 {
+    grid-column-start: 11;
+}
+
+.start-col-12 {
+    grid-column-start: 12;
+}
+
+@media only screen and (max-width: 500px) {}
+
+
+/* END - CONTENT GRID */
