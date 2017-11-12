@@ -1,5 +1,10 @@
 /* START - BASIC TYPOGRAPHY */
 
+body {
+    font-size: 20px;
+    line-height: 1.5em;
+}
+
 ul {
     margin-left: 1em;
     padding-left: 0;
@@ -12,6 +17,52 @@ li {
 
 /* END - BASIC TYPOGRAPHY */
 
+/* START - BUTTONS */
+
+.btn {
+    border-radius: 30px;
+    
+}
+
+.btn::after {
+    content: " \25B7";
+}
+.secondary {
+    border: 3px solid blue;
+    fill: none;
+    padding: 5% 20%;
+    color: blue;
+    font-size: 1em;
+}
+
+
+/* END - BUTTONS */
+
+
+/* START - HEADER */
+
+.header-title-bg {
+	background-color: blue;
+	grid-column: 1 / span 14;
+	width: 100%;
+	height: 30vh;
+	margin-top: 18vh;
+}
+
+.header-c2a {
+	margin-top: 52vh;
+	justify-self: center;
+	background-color: rgba(255, 255, 255, 0.7);
+	max-height: 210px;
+	padding: 10px;
+    font-size: .9em;
+    text-align: center;
+}
+
+.header-title {
+    margin-top: 20vh;   
+}
+/* END - HEADER */
 
 /* START - THE BASIC GRID */
 
@@ -29,9 +80,8 @@ li {
 
 .header-row {
     grid-row: 1;
-    align-self: center;
-    justify-self: center;
 }
+
 /*.wrapper {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
@@ -52,25 +102,11 @@ li {
 	background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-}
-
-.header-bg {
-    opacity: 0.2;
-    height: 100vh;
-    background: linear-gradient( rgba(241, 196, 15, 0.45), rgba(241, 196, 15, 0.45)), url("img/team-386673_1920crop.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    z-index: -1;
 }
 
 
-.header-content {
-    background-color: blue;
-    grid-column: 1 / span 14;
-    width: 100%;    
-    height: 30vh;
-}
+
 
 /* START - CONTENT GRID */
 
