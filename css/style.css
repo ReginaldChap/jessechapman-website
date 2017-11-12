@@ -33,8 +33,10 @@ li {
     }
 }
 
-.head {
+.header-row {
     grid-row: 1;
+    align-self: center;
+    justify-self: center;
 }
 /*.wrapper {
     display: grid;
@@ -67,7 +69,18 @@ li {
 }
 
 
+.header-content {
+    background-color: blue;
+    grid-column: 1 / span 14;
+    width: 100%;    
+    height: 30vh;
+}
+
 /* START - CONTENT GRID */
+
+.full-width {
+    grid-column: 1 / span 14;
+}
 
 .content-wrapper {
     grid-column: 2 / span 12;
