@@ -24,13 +24,7 @@ li {
     display: grid;
     grid-template-columns: 20% repeat(12, 1fr) 20%;
     grid-auto-rows: minmax(100px, auto);
-}
-
-@media screen and (min-width: 500px) {
-    .wrapper {
-        grid-template-columns: 20% repeat(12, 1fr) 20%;
-        grid-auto-rows: minmax(100px, auto);
-    }
+    grid-gap: 20px;
 }
 
 .header-row {
@@ -46,17 +40,18 @@ li {
 }*/
 
 .header {
-    grid-column-start: 1;
-    grid-column-end: span 16;
-    grid-row: 1;
-    height: 100vh;
-    background-color: #fff;
-    opacity: 0.2;
-    height: 100vh;
-    background: linear-gradient( rgba(241, 196, 15, 0.45), rgba(241, 196, 15, 0.45)), url("img/team-386673_1920crop.jpg");
-    background-position: center;
-    background-size: cover;
+	grid-column-start: 1;
+	grid-column-end: span 14;
+	grid-row: 1;
+	height: 100vh;
+	background-color: #fff;
+	opacity: 0.2;
+	height: 100vh;
+	background: linear-gradient( rgba(241, 196, 15, 0.45), rgba(241, 196, 15, 0.45)), url("img/team-386673_1920crop.jpg");
+	background-position: center;
+	background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .header-bg {
@@ -66,6 +61,7 @@ li {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 
