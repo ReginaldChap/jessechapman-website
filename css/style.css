@@ -75,6 +75,16 @@ li {
 }
 /* END - HEADER */
 
+/* START SPECIALS*/
+
+.specials-bg {
+    grid-column: 1 / span 14;
+    background-color: blue;
+   /* height: 200px; */
+}
+
+/* END - SPECIALS*/
+
 /* START - THE BASIC GRID */
 
 .container {
