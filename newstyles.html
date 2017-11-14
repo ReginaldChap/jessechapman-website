@@ -1,155 +1,7 @@
-<html>
+<!DOCTYPE html>
 
 <head>
-    <style>
-        /* FONTS */
-
-        body {
-            font-size: 20px;
-            line-height: 1.6em;
-            font-family: sans-serif;
-        }
-
-
-
-        .container {
-            display: grid;
-            grid-template-columns: 2fr 2fr repeat(12, 1fr) 2fr 2fr;
-            grid-template-rows: 100vh auto;
-            grid-template-areas: "hd hd hd hd hd hd hd hd hd hd hd hd hd hd hd hd" ". . main main main main main main main main main main main main  . .";
-            grid-gap: 20px;
-            grid-row-gap: 50px;
-        }
-
-        @media only screen and (max-width: 500px) {
-            .container {
-                display: none;
-            }
-        }
-
-        .services-container {
-            display: grid;
-            grid-template-columns: repeat(12, 1fr);
-            grid-gap: 20px;
-        }
-
-        .services-content {
-            grid-column-end: span 4;
-        }
-
-        .about-bg {
-            background-color: blue;
-            grid-column: 1 / span 8;
-            grid-row: 5;
-        }
-
-        .about-content {
-            grid-column: 3/span 5;
-            grid-row: 5;
-            color: #fff;
-        }
-
-        .full-width {
-            grid-column: 1 / span 16;
-        }
-
-        .content-container {
-            grid-column: 3 / span 12;
-        }
-
-        .col-2-3 {
-            grid-column: 3 / span 7;
-        }
-
-        .col-1-3 {
-            grid-column: 11 / span 4;
-        }
-
-        .special {
-            background-color: blue;
-            height: 400px;
-        }
-
-        .special-row {
-            grid-row: 3;
-        }
-
-        .special-content {
-            align-self: end;
-            justify-self: center;
-            text-align: center;
-            margin-bottom: 20px;
-            grid-column: 5 / span 8;
-        }
-
-        .header {
-            height: 100vh;
-            background-color: #333;
-            grid-area: hd;
-            align-content: center;
-            justify-content: center;
-        }
-
-        .header-band {
-            grid-area: hd;
-            background-color: blue;
-            height: 200px;
-            align-self: center;
-            margin: -350px 0 20px 0;
-        }
-
-        .header-band-content {
-            margin: 50px 0 50px 0;
-            text-align: center;
-        }
-
-        .header-c2a {
-            grid-area: hd;
-            background-color: #fff;
-            align-self: center;
-            justify-self: center;
-            width: 370px;
-            margin-top: 150px;
-            padding: 20px;
-            text-align: center;
-        }
-
-        .footer {
-            background-color: blue;
-            grid-row: 6;
-            margin-bottom: -100px;
-        }
-
-        .footer-container {
-            /* grid-column: 3 / span 12; */
-            /* grid-row: 6; */
-            display: grid;
-            grid-template-columns: repeat(12, 1fr);
-            grid-gap: 20px;
-        }
-        
-        .footer-content {
-            grid-row: 6;
-        }
-        .btn {
-            border-radius: 20px;
-            padding: 5% 20%;
-            border: 3px solid;
-        }
-
-        .btn::after {
-            content: " \2234"
-        }
-
-        .secondary {
-            background-color: rgba(255, 255, 255, 0);
-            color: blue;
-        }
-
-        .center-btn {
-            text-align: center;
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
 <body>
@@ -168,7 +20,7 @@
             <button class="btn secondary">Learn More</button>
         </div>
 
-        <div class="col-2-3">
+        <div class="pitch">
             <h2>How I can help.</h2>
             <p>Digital marketing can be the most cost effective way to promote your community, as well as a way to gain followers.
                 Your website can improve your groups credibility and reputation.</p>
@@ -178,7 +30,7 @@
                 and easily. I also offer digital newsletters, a quick and easy way to stay in touch with your community and
                 members. </p>
         </div>
-        <div class="col-1-3">
+        <div class="services-list">
             <h3>Services I provide.</h3>
             <ul>
                 <li>Website design and development</li>
@@ -196,7 +48,7 @@
             <p>Incididunt aliquip officia ex dolor ipsum excepteur. Nisi ad et sit est elit ut minim ullamco do sunt deserunt
                 anim excepteur ut.</p>
         </div>
-        <div class="content-container">
+        <div class="content-container service-groups">
             <h2>Groups I Service.</h2>
             <div class="services-container">
                 <div class="services-content">
@@ -231,7 +83,6 @@
             </div>
         </div>
         <div class="about-bg">
-
         </div>
         <div class="about-content">
             <h2>About me.</h2>
@@ -240,9 +91,17 @@
                 Labore esse do nostrud quis Lorem mollit sit ad. Cupidatat ut amet ea culpa. Consequat laborum adipisicing
                 eu esse.</p>
         </div>
+        <div class="qualifications-list">
+            <h3>My Qualifications</h3>
+            <ul>
+                <li>Bachelor Media Communications</li>
+                <li>Diploma Multimedia</li>
+                <li>Cert IV Digital Media</li>
+            </ul>
+        </div>
         <div class="full-width footer"></div>
         <div class="content-container footer-content">
-        <div class="footer-container">
+            <div class="footer-container">
                 <div class="services-content">
                     <h3>Title one.</h3>
                     <p>DIncididunt pariatur eu ut sit nisi. Occaecat cillum incididunt consequat elit consequat velit dolor.</p>
@@ -257,25 +116,9 @@
                     <p>Laborum cillum officia aliqua amet voluptate qui aute cillum officia ex. Dolore cupidatat cupidatat sunt
                         Lorem eu veniam consequat adipisicing qui eiusmod Lorem eu eu do.</p>
                 </div>
-                <div class="services-content">
-                    <h3>Title 4.</h3>
-                    <p>Laborum cillum officia aliqua amet voluptate qui aute cillum officia ex. Dolore cupidatat cupidatat sunt
-                        Lorem eu veniam consequat adipisicing qui eiusmod Lorem eu eu do.</p>
-                </div>
-                <div class="services-content">
-                    <h3>Title 5.</h3>
-                    <p>Laborum cillum officia aliqua amet voluptate qui aute cillum officia ex. Dolore cupidatat cupidatat sunt
-                        Lorem eu veniam consequat adipisicing qui eiusmod Lorem eu eu do.</p>
-                </div>
-                <div class="services-content">
-                    <h3>Title 6.</h3>
-                    <p>Laborum cillum officia aliqua amet voluptate qui aute cillum officia ex. Dolore cupidatat cupidatat sunt
-                        Lorem eu veniam consequat adipisicing qui eiusmod Lorem eu eu do.</p>
-                </div></div>
-
+            </div>
         </div>
-        
-        </div>
+    </div>
 </body>
 
 </html>
