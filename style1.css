@@ -1,13 +1,35 @@
-/*TODO: separate grid classes from everything else*/
+/*TODO: separate grid classes from everything else
+// RESET CSS
+//typography*/
 
+/* CSS RESET */
 body {
     margin: 0;
     padding: 0;
 }
 
+/* TYPOGRAPHY */
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    line-height: 1.5em;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+
+/*GRID*/
 .container-grid {
     display: grid;
     grid-template-columns: 10px 1fr 10px;
+    grid-row-gap: 3em; 
 }
 
 .grid {
@@ -18,10 +40,18 @@ body {
 }
 
 .head-grid {
-    display: grid;
-    grid-column: 2;
+	display: grid;
+	grid-column: 2;
+	justify-content: center;
+	text-align: center;
+	height: 100vh;
+	align-content: center;
+}
+.masthead {
+    grid-column: 1 / span 3;
     justify-content: center;
-    text-align: center;
+    align-content: center;
+    height: 100vh;
 }
 
 @media (min-width: 500px) {
@@ -38,12 +68,9 @@ body {
     }
     .masthead {
         grid-column: 1 / span 3;
-        justify-content: center;
-        align-content: center;
-        height: 100vh;
     }
     .header-content {
-        grid-column: 1 / span 12;
+        /*grid-column: 1 / span 12;*/
     }
     .home {
         grid-row: 2;
@@ -91,20 +118,22 @@ body {
         grid-column: 4 / span 4;
         grid-row: 1;
     }
+    .flex-container {
+        grid-column: 1 / span 12;
+    }
 }
 
 .flex-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    grid-column: 1 / span 12;
 }
 
 .flex-box {
     flex-grow: 1;
     min-width: 150px;
-    max-width: 300px;
-    background-color: rosybrown;
+    max-width: 260px;
+    background-color: #f2f2f2;
     margin: 10px;
     padding: 0 10px;
 }
@@ -114,5 +143,7 @@ body {
     margin: 10px;
     padding: 10px;
     width: 250px;
+    justify-self: center;
 }
+
 
