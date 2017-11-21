@@ -75,17 +75,42 @@ body {
     background-color: violet;
 }
 
+.services-flex {
+	padding: 2em 1em 1em;
+	background: #3E454C;
+}
+
+.services-flex ul {
+	margin: 0;
+	padding: 0;
+}
+
+.services-flex li {
+	margin-bottom: 1em;
+	background: white;
+	list-style-type: none;
+}
+
+.services-flex ul {
+    display: flex;
+    justify-content: space-around;    
+}
+.services-flex li {
+width: 31%;
+}
+
 .services-heading {
     grid-column: 2 / span 12;
 }
 
 .groups-service {
+    padding: 1.5em; 
   /*  grid-column: 2 / span 12; */
 }
 
 @media (min-width:768px) {
     .groups-service {
-       display: flex;  
+       /*display: flex;  */
     }
 }
 
