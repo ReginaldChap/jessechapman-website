@@ -1,77 +1,118 @@
+/*TODO: separate grid classes from everything else*/
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
 .container-grid {
     display: grid;
-    grid-template-columns: auto minmax(min-content, 1280px) auto;
-    grid-gap: 10px;
+    grid-template-columns: 10px 1fr 10px;
 }
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(12,minmax(20px, 1fr));
+    grid-template-columns: 1fr;
     grid-gap: 10px;
-    grid-column: 1;
+    grid-column: 2;
 }
 
-.masthead {
-    grid-column: 1 / span 3;
+.head-grid {
+    display: grid;
+    grid-column: 2;
     justify-content: center;
-    align-content: center;
-    height: 100vh;
-}
-
-.header-content {
-    grid-column: 1 / span 12;
     text-align: center;
 }
 
-.header-c2a {
-    grid-column: 5 / span 4;
-    background-color: blue;
-    margin: 10px;
-    padding: 10px;
-    
-}
-
-.home {
-    grid-row: 2;
-    grid-column: 2 / span 1;
-    justify-content: left;
-}
-
-.home-primary {
-    grid-column: 2 / span 7;
-}
-
-.home-secondary {
-    grid-column: auto;
-}
-
-.special {
-    grid-row: 3;
-    height: 300px;
-    grid-column: 1 / span 3;
-    align-content: end;
-}
-
-.special-content {
-    text-align: center;
-    grid-column: 1 / span 12;
-}
-
-.groups {
-    grid-row: 4;
-    grid-column: 2 / span 1;
+@media (min-width: 500px) {
+    .container-grid {
+        grid-template-columns: auto minmax(300px, 960px) auto;
+    }
+    .grid {
+        grid-template-columns: repeat(12, minmax(20px, 1fr));
+        grid-gap: 10px;
+        grid-column: 2;
+    }
+    .heading {
+        grid-column: span 7;
+    }
+    .masthead {
+        grid-column: 1 / span 3;
+        justify-content: center;
+        align-content: center;
+        height: 100vh;
+    }
+    .header-content {
+        grid-column: 1 / span 12;
+    }
+    .home {
+        grid-row: 2;
+        grid-column: 2 / span 1;
+        justify-content: left;
+        background-color: #f2f2f2;
+    }
+    .home-primary {
+        grid-column: 1 / span 7;
+    }
+    .home-secondary {
+        grid-column: 9 / span 4;
+    }
+    .special {
+        grid-row: 3;
+        height: 300px;
+        grid-column: 1 / span 3;
+        align-content: end;
+        background-color: pink;
+    }
+    .special-content {
+        text-align: center;
+        grid-column: 1 / span 12;
+    }
+    .groups {
+        grid-row: 4;
+        grid-column: 2 / span 1;
+    }
+    .about {
+        grid-row: 5;
+        grid-column: 2 / span 1;
+    }
+    .about-bg-margin {
+        grid-column: 1 / span 1;
+        background-color: blue;
+        grid-row: 5;
+    }
+    .about-bg {
+        grid-column: 1 / span 8;
+        background-color: blue;
+        grid-row: 1;
+        height: auto;
+    }
+    .about-content {
+        grid-column: 4 / span 4;
+        grid-row: 1;
+    }
 }
 
 .flex-container {
     display: flex;
-    flex-flow: row wrap;
+    flex-wrap: wrap;
     justify-content: space-around;
     grid-column: 1 / span 12;
 }
 
 .flex-box {
-    min-width: 250px;
+    flex-grow: 1;
+    min-width: 150px;
+    max-width: 300px;
     background-color: rosybrown;
     margin: 10px;
     padding: 0 10px;
 }
+
+.header-c2a {
+    background-color: blue;
+    margin: 10px;
+    padding: 10px;
+    width: 250px;
+}
+
