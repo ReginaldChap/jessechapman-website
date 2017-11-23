@@ -20,6 +20,7 @@ body {
 h1 {
     font-size: 3em;
     text-transform: uppercase;
+    line-height: 1em;
 }
 
 h2 {
@@ -31,8 +32,9 @@ h2 {
     color: #fcfcfc;
 }
 
-.special, .special h2 {
+.special, .special h2, .special p {
     color: #fcfcfc;
+    margin: 10px 0;
 }
 
 /*GRID*/
@@ -55,13 +57,14 @@ h2 {
 	justify-content: center;
 	text-align: center;
 	height: 100vh;
-	align-content: center;
+	/*align-content: center;*/
 }
 .masthead {
     grid-column: 1 / span 3;
-    background-image: url('img/team-spirit-2447163_1920.jpg');
+    background-image: url('img/graphicstock-multiethnic-group-of-smiling-young-friends-standing-and-showing-thumbs-up-over-blue-sky-background_SdHnVlqHne.jpg');
     background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
     
 }
 
@@ -85,6 +88,7 @@ h2 {
     }
     .header-content {
         /*grid-column: 1 / span 12;*/
+        margin-top: 40px;
     }
     .home {
         grid-row: 2;
@@ -99,11 +103,13 @@ h2 {
     }
     .special {
         grid-row: 3;
-        height: 300px;
+        height: 400px;
         grid-column: 1 / span 3;
         align-content: end;
-        background-image: url('img/market-1935046_1920.jpg');
-        background-position: bottom;
+        background-image: url('img/graphicstock-multiethnic-group-of_SuP8v_I3x.jpg');
+        background-position-y: -100px;
+        background-size: cover;
+        background-repeat: no-repeat;
     }
     .special-content {
         text-align: center;
@@ -159,11 +165,13 @@ h2 {
 }
 
 .header-c2a {
-    background-color: blue;
+    background-color: rgba(0, 0, 150, 0.4);
     margin: 10px;
     padding: 10px;
-    width: 250px;
+    width: 300px;
     justify-self: center;
+    align-self: center;
+    color: #FCFCFC;
 }
 
 
