@@ -9,6 +9,20 @@
     border: none;
 }
 
+.primary {
+    transition: all .3s;
+    background: #FFA500;
+    border: 2px solid #4169E1;
+    color: #4169E1;
+    font-size: .8em;
+    font-weight: bold;
+}
+
+.primary:hover {
+    transition: all .3s;
+    background-color: #4169E1;
+    color: #FFA500;
+}
 .secondary {
     transition: all .3s;
     background: none;
@@ -28,6 +42,7 @@
 body {
     margin: 0;
     padding: 0;
+    letter-spacing: .05em;
 }
 
 /* TYPOGRAPHY */
@@ -52,6 +67,7 @@ h2 {
 h1, h2, h3, h4 {
     color: #FFA500;
     text-transform: uppercase;
+    letter-spacing: .1em;
 }
 
 .about-content, .about-content h2 {
@@ -62,7 +78,9 @@ h1, h2, h3, h4 {
     color: #fcfcfc;
     margin: 10px 0;
 }
-
+ul {
+    padding: 1em;
+}
 .flex-box ul {
     padding: 1em;
 }
@@ -132,6 +150,8 @@ h1, h2, h3, h4 {
     height: auto;
     z-index: -10;
 }
+
+
 .about-content {
     grid-column: 1;
     grid-row: 1;
@@ -148,6 +168,7 @@ h1, h2, h3, h4 {
     background-repeat: no-repeat;
     padding: 0 5px;
 }
+
 @media (min-width: 500px) {
     .container-grid {
         grid-template-columns: auto minmax(300px, 960px) auto;
@@ -188,11 +209,17 @@ h1, h2, h3, h4 {
         height: 400px;
         grid-column: 1 / span 3;
         align-content: end;
-        background-image: url('img/graphicstock-blurred-background-people-shopping-at-market-fair-in-sunny-day-blur-background-with-bokeh_STxcmVy9JW.jpg');
+        background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.9) 100%), url('img/graphicstock-blurred-background-people-shopping-at-market-fair-in-sunny-day-blur-background-with-bokeh_STxcmVy9JW.jpg');
+        background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(59%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0.65))), url('img/graphicstock-blurred-background-people-shopping-at-market-fair-in-sunny-day-blur-background-with-bokeh_STxcmVy9JW.jpg');
+        background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.9) 100%), url('img/graphicstock-blurred-background-people-shopping-at-market-fair-in-sunny-day-blur-background-with-bokeh_STxcmVy9JW.jpg');
+        background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.9) 100%), url('img/graphicstock-blurred-background-people-shopping-at-market-fair-in-sunny-day-blur-background-with-bokeh_STxcmVy9JW.jpg');
+        background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.9) 100%), url('img/graphicstock-blurred-background-people-shopping-at-market-fair-in-sunny-day-blur-background-with-bokeh_STxcmVy9JW.jpg');
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.9) 100%), url('img/graphicstock-blurred-background-people-shopping-at-market-fair-in-sunny-day-blur-background-with-bokeh_STxcmVy9JW.jpg');
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
-    }
+    }  
+
     .special-content {
         text-align: center;
         grid-column: 1 / span 12;
@@ -230,6 +257,14 @@ h1, h2, h3, h4 {
         grid-template-columns: auto 960px auto;
     }
 }
+
+
+ @media (min-width: 500px) and (max-width: 850px ) {
+    .about-bg {
+        grid-column: 1 / span 11;
+    }
+} 
+
 
 .flex-container {
     display: flex;
