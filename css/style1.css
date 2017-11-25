@@ -1,6 +1,28 @@
-/*TODO: separate grid classes from everything else
+/*TODO: Change heading sizes for mobile.
+/*TODO: jquery hover for services. blur/color img background overlay list. 
 // RESET CSS
 //typography*/
+
+.btn {
+    padding: 10px 50px;
+    border-radius: 30px;
+    border: none;
+}
+
+.secondary {
+    transition: all .3s;
+    background: none;
+    border: 2px solid #fff;
+    color: #fff;
+    font-size: .8em;
+    font-weight: bold;
+}
+
+.secondary:hover {
+    transition: all .3s;
+    background-color: #fff;
+    color: #4169E1;
+}
 
 /* CSS RESET */
 body {
@@ -14,7 +36,7 @@ body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 20px;
     line-height: 1.5em;
-    color: #323232;
+    color: #3d3d3d;
 }
 
 h1 {
@@ -25,7 +47,11 @@ h1 {
 
 h2 {
     font-size: 2em;
-    color: #323232;
+}
+
+h1, h2, h3, h4 {
+    color: #FFA500;
+    text-transform: uppercase;
 }
 
 .about-content, .about-content h2 {
@@ -37,6 +63,27 @@ h2 {
     margin: 10px 0;
 }
 
+.flex-box ul {
+    padding: 1em;
+}
+
+@media (max-width: 360px) {
+    h1 {
+        font-size: 2em;
+        text-transform: uppercase;
+        line-height: 1em;
+    }
+    
+    h2 {
+        font-size: 1.7em;
+    }
+    
+    h1, h2, h3, h4 {
+        color: #FFA500;
+        text-transform: uppercase;
+    }
+    
+}
 /*GRID*/
 .container-grid {
     display: grid;
@@ -56,8 +103,13 @@ h2 {
 	grid-column: 2;
 	justify-content: center;
 	text-align: center;
-	height: 100vh;
+    height: 100vh;
 	/*align-content: center;*/
+}
+
+.header-content h1, .header-content h2 {
+    color: #fff ;
+    text-transform: uppercase;
 }
 .masthead {
     grid-column: 1 / span 3;
@@ -68,9 +120,34 @@ h2 {
     
 }
 
+.about-bg-margin {
+    grid-column: 1 / span 1;
+    background-color: #4169E1;
+    grid-row: 5;
+}
+.about-bg {
+    grid-column: 1;
+    background-color: #4169E1;
+    grid-row: 1;
+    height: auto;
+    z-index: -10;
+}
+.about-content {
+    grid-column: 1;
+    grid-row: 1;
+}
 
-
-
+.special {
+    grid-column: 1 / span 3;
+    grid-row: 3;
+    height: 400px;
+    align-content: end;
+    background-image: url('img/graphicstock-blurred-background-people-shopping-at-market-fair-in-sunny-day-blur-background-with-bokeh_STxcmVy9JW.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0 5px;
+}
 @media (min-width: 500px) {
     .container-grid {
         grid-template-columns: auto minmax(300px, 960px) auto;
@@ -82,7 +159,12 @@ h2 {
     }
     .heading {
         grid-column: span 7;
+        background-color: 
     }
+    .paragraph {
+        grid-column: span 6;
+    }
+
     .masthead {
         grid-column: 1 / span 3;
     }
@@ -106,8 +188,8 @@ h2 {
         height: 400px;
         grid-column: 1 / span 3;
         align-content: end;
-        background-image: url('img/graphicstock-multiethnic-group-of_SuP8v_I3x.jpg');
-        background-position-y: -100px;
+        background-image: url('img/graphicstock-blurred-background-people-shopping-at-market-fair-in-sunny-day-blur-background-with-bokeh_STxcmVy9JW.jpg');
+        background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
     }
@@ -125,12 +207,12 @@ h2 {
     }
     .about-bg-margin {
         grid-column: 1 / span 1;
-        background-color: blue;
+        background-color: #4169E1;
         grid-row: 5;
     }
     .about-bg {
         grid-column: 1 / span 8;
-        background-color: blue;
+        background-color: #4169E1;
         grid-row: 1;
         height: auto;
     }
@@ -164,14 +246,17 @@ h2 {
     padding: 0 10px;
 }
 
+.service-img {
+    width: 250px;
+}
+
 .header-c2a {
-    background-color: rgba(0, 0, 150, 0.4);
+    background-color: rgba(65,105,225, 0.9);
     margin: 10px;
     padding: 10px;
-    width: 300px;
+    width: 275px;
     justify-self: center;
     align-self: center;
     color: #FCFCFC;
 }
-
 
