@@ -3,6 +3,56 @@
 // RESET CSS
 //typography*/
 
+
+
+/* CSS RESET */
+body {
+    margin: 0;
+    padding: 0;
+    letter-spacing: .05em;
+}
+
+/* TYPOGRAPHY */
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    line-height: 1.5em;
+    color: #3d3d3d;
+}
+
+h1 {
+    font-size: 3em;
+    text-transform: uppercase;
+    line-height: 1em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h1, h2, h3, h4 {
+    color: #FFA500;
+    text-transform: uppercase;
+    letter-spacing: .04em;
+}
+
+.about-content, .about-content h2 {
+    color: #fcfcfc;
+}
+
+.special, .special h2, .special p {
+    color: #fcfcfc;
+    margin: 10px 0;
+}
+ul {
+    padding: 1em;
+}
+.flex-box ul {
+    padding: 1em;
+}
+
+/* Buttons */
 .btn {
     padding: 10px 50px;
     border-radius: 30px;
@@ -36,53 +86,6 @@
     transition: all .3s;
     background-color: #fff;
     color: #4169E1;
-}
-
-/* CSS RESET */
-body {
-    margin: 0;
-    padding: 0;
-    letter-spacing: .05em;
-}
-
-/* TYPOGRAPHY */
-
-body {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 20px;
-    line-height: 1.5em;
-    color: #3d3d3d;
-}
-
-h1 {
-    font-size: 3em;
-    text-transform: uppercase;
-    line-height: 1em;
-}
-
-h2 {
-    font-size: 2em;
-}
-
-h1, h2, h3, h4 {
-    color: #FFA500;
-    text-transform: uppercase;
-    letter-spacing: .1em;
-}
-
-.about-content, .about-content h2 {
-    color: #fcfcfc;
-}
-
-.special, .special h2, .special p {
-    color: #fcfcfc;
-    margin: 10px 0;
-}
-ul {
-    padding: 1em;
-}
-.flex-box ul {
-    padding: 1em;
 }
 
 @media (max-width: 360px) {
@@ -233,7 +236,7 @@ ul {
         grid-column: 2 / span 1;
     }
     .about-bg-margin {
-        grid-column: 1 / span 1;
+        grid-column: 1;
         background-color: #4169E1;
         grid-row: 5;
     }
@@ -244,7 +247,7 @@ ul {
         height: auto;
     }
     .about-content {
-        grid-column: 4 / span 4;
+        grid-column: 2 / span 4;
         grid-row: 1;
     }
     .flex-container {
