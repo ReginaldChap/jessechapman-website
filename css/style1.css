@@ -274,18 +274,92 @@ ul {
     flex-wrap: wrap;
     justify-content: space-around;
 }
-
 .flex-box {
-    position: relative;
-    flex-grow: 1;
-    min-width: 150px;
-    max-width: 260px;
-    height: 300px;
-    background-color: #fcfcfc;
-    margin: 10px;
-    padding: 0 10px;
+	position: relative;
+	flex-grow: 1;
+	min-width: 280px;
+	max-width: 300px;
+	background-color: #fcfcfc;
+	margin: 10px;
+	padding: 0 10px;
+	height: 300px;
 }
 
+.flex-box-title {
+	position: absolute;
+	bottom: 0px;
+	background-color: blue;
+	width: 90%;
+	margin: 0;
+	padding: 0 5%;
+	left: 0px;
+}
+.flex-box-title h4 {
+    margin: 0;
+}
+.flex-box-cont {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    padding: 5% 7%;
+    width: 86%;
+    height: 90%;
+    display: none;
+    align-content: center;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(55, 55, 55, 0.8)), to(rgba(55, 55, 55, 0.8)));
+    background-image: -webkit-linear-gradient(top, rgba(55, 55, 55, 0.8), rgba(55, 55, 55, 0.8));
+    background-image: -moz-linear-gradient(top, rgba(55, 55, 55, 0.8), rgba(55, 55, 55, 0.8));
+    background-image: linear-gradient(to bottom, rgba(55, 55, 55, 0.8), rgba(55, 55, 55, 0.8));
+}
+
+.flex-box-cont h4{
+    margin-bottom: 0;
+}
+
+
+.flex-box-cont ul {
+    margin: 0;
+    color: #fff;
+    padding-left: 1em;
+    
+}
+
+.highlight {
+    color: red !important;
+    border: solid 3px;
+    border-color: yellow;
+}
+
+.sport-clubs-bg {
+	background-image: url('img/sportclubs.jpg');
+	background-size: cover;
+}
+
+.learning-centers-bg {
+	background-image: url('img/learningcenters.jpg');
+	background-size: cover;
+}
+
+.church-groups-bg {
+	background-image: url('img/churchgroups.jpg');
+	background-size: cover;
+}
+.community-events-bg {
+	background-image: url('img/communityevents.jpg');
+	background-size: cover;
+}
+.community-hubs-bg {
+	background-image: url('img/communityhubs.jpg');
+	background-size: cover;
+}
+.enviro-groups-bg {
+	background-image: url('img/envirogroups.jpg');
+	background-size: cover;
+}
+#group-hover {
+    background-image: url('img/communityhubs.jpg');
+    background-size: cover;
+}
 .service-img {
     width: 250px;
 }
@@ -301,18 +375,3 @@ ul {
 }
 
 
-.highlight {
-    color: red !important;
-    border: solid 3px;
-    border-color: yellow;
-}
-
-.sport-clubs-bg {
-    background-image: url('img/sportclubs.jpg');
-    background-size: cover;
-}
-
-#group-hover {
-    background-image: url('img/communityhubs.jpg');
-    background-size: cover;
-}
