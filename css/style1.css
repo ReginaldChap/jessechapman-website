@@ -276,9 +276,11 @@ ul {
 }
 
 .flex-box {
+    position: relative;
     flex-grow: 1;
     min-width: 150px;
     max-width: 260px;
+    height: 300px;
     background-color: #fcfcfc;
     margin: 10px;
     padding: 0 10px;
@@ -298,3 +300,19 @@ ul {
     color: #FCFCFC;
 }
 
+
+.highlight {
+    color: red !important;
+    border: solid 3px;
+    border-color: yellow;
+}
+
+.sport-clubs-bg {
+    background-image: url('img/sportclubs.jpg');
+    background-size: cover;
+}
+
+#group-hover {
+    background-image: url('img/communityhubs.jpg');
+    background-size: cover;
+}
