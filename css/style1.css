@@ -273,6 +273,8 @@ ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    list-style: none;
+    padding: 0;
 }
 .flex-box {
 	position: relative;
@@ -328,6 +330,10 @@ ul {
     color: red !important;
     border: solid 3px;
     border-color: yellow;
+}
+
+.bg {
+    display: block;
 }
 
 .sport-clubs-bg {
