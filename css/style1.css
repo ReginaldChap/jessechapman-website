@@ -171,8 +171,75 @@ ul {
     background-repeat: no-repeat;
     padding: 0 5px;
 }
+.footer {
+    grid-column: 1 / span 3;
+    grid-row: 6;
+    background-color: darkcyan;
+    padding-bottom: 200px;
+}
 
+.footer-cont {
+    grid-column: 2 / span 1;
+    grid-row: 6;
+    padding-bottom: 10px;
+    color: #fcfcfc;
+    font-size: .9em;
+}
+.form-item {
+    /* width: 260px; */
+    display: block;
+    border-bottom: 1px solid;
+    margin: 10px;
+    padding-bottom: 10px;
+}
+.footer-contact .label {
+    width: 100px;
+    float: left;
+    text-align: left;
+    padding-right: 10px;
+}
 
+.footer-contact input {
+    display: block;
+    font-size: 110%;
+    background-color: #fcfcfc;
+    border: 1px solid #999;
+    padding: 5px;
+    /* border-radius: 5px; */
+}
+.footer-contact input:focus, .footer-contact input:hover {
+    border: 1px solid #FFA500;
+    background-color: #fff;
+    /* border-radius: 5px; */
+}
+.footer-contact textarea {
+    display: block;
+    font-size: 110%;
+    padding: 5px;        
+    background-color: #fcfcfc;
+    border: 1px solid #999;
+    /* border-radius: 5px; */
+}
+
+.submit {
+    text-align: right;
+}
+.submit input {
+    display: inline;
+    border: 1px solid #fff;
+    transition: all .3s;
+    background: none;
+    border: 1px solid #fff;
+    color: #fff;
+    font-size: .8em;
+    font-weight: bold;
+    padding: 10px 50px;
+    border-radius: 30px;
+}
+.submit input:hover {
+    color: #4169E1;
+    border: 1px solid #4169E1;
+}
 
 @media (min-width: 500px) {
     .container-grid {
@@ -254,16 +321,20 @@ ul {
     .flex-container {
         grid-column: 1 / span 12;
     }
-    .footer {
+
+    .footer-links {
         grid-column: 1 / span 3;
-        grid-row: 6;
-        background-color: darkcyan;
-        height: 300px;
     }
-    
-    .footer-cont {
-        grid-column: 2 / span 1;
-        grid-row: 6;
+
+    .footer-contact {
+        grid-column: 8 / span 4;
+    }
+
+   
+    .copyright {
+        grid-column: 1 / span 12;
+        text-align: center;
+        font-size: .8em;
     }
 }
 
@@ -302,7 +373,6 @@ ul {
 .flex-box-title {
 	position: absolute;
 	bottom: 0px;
-	background-color: rgba(65,105,225, 0.9);
 	width: 90%;
 	margin: 0;
 	padding: 0 5%;
@@ -350,33 +420,68 @@ ul {
 }
 
 .sport-clubs-bg {
-	background-image: url('img/sportclubs.jpg');
+    background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.9) 100%), url('img/sportclubs.jpg');
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(59%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0.65))), url('img/sportclubs.jpg');
+    background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.9) 100%), url('img/sportclubs.jpg');
+    background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.9) 100%), url('img/sportclubs.jpg');
+    background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.9) 100%), url('img/sportclubs.jpg');
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.9) 100%), url('img/sportclubs.jpg');
 	background-size: cover;
 }
 
 .learning-centers-bg {
-	background-image: url('img/learningcenters.jpg');
+    background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.9) 100%), url('img/learningcenters.jpg');
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(59%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0.65))), url('img/learningcenters.jpg');
+    background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.9) 100%), url('img/learningcenters.jpg');
+    background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.9) 100%), url('img/learningcenters.jpg');
+    background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.9) 100%), url('img/learningcenters.jpg');
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.9) 100%), url('img/learningcenters.jpg');
 	background-size: cover;
 }
 
 .church-groups-bg {
-	background-image: url('img/churchgroups.jpg');
+    background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.9) 100%), url('img/churchgroups.jpg');
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(59%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0.65))), url('img/churchgroups.jpg');
+    background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.9) 100%), url('img/churchgroups.jpg');
+    background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.9) 100%), url('img/churchgroups.jpg');
+    background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.9) 100%), url('img/churchgroups.jpg');
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.9) 100%), url('img/churchgroups.jpg');
 	background-size: cover;
 }
 .community-events-bg {
-	background-image: url('img/communityevents.jpg');
+    background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.9) 100%), url('img/communityevents.jpg');
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(59%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0.65))), url('img/communityevents.jpg');
+    background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.9) 100%), url('img/communityevents.jpg');
+    background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.9) 100%), url('img/communityevents.jpg');
+    background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.9) 100%), url('img/communityevents.jpg');
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.9) 100%), url('img/communityevents.jpg');
 	background-size: cover;
 }
 .community-hubs-bg {
-	background-image: url('img/communityhubs.jpg');
+    background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.9) 100%), url('img/communityhubs.jpg');
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(59%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0.65))), url('img/communityhubs.jpg');
+    background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.9) 100%), url('img/communityhubs.jpg');
+    background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.9) 100%), url('img/communityhubs.jpg');
+    background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.9) 100%), url('img/communityhubs.jpg');
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.9) 100%), url('img/communityhubs.jpg');
 	background-size: cover;
 }
 .enviro-groups-bg {
-	background-image: url('img/envirogroups.jpg');
+    background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.9) 100%), url('img/envirogroups.jpg');
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(59%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0.65))), url('img/envirogroups.jpg');
+    background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.9) 100%), url('img/envirogroups.jpg');
+    background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.9) 100%), url('img/envirogroups.jpg');
+    background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.9) 100%), url('img/envirogroups.jpg');
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.9) 100%), url('img/envirogroups.jpg');
 	background-size: cover;
 }
 #group-hover {
-    background-image: url('img/communityhubs.jpg');
+    background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.9) 100%), url('img/communityhubs.jpg');
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(59%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0.65))), url('img/communityhubs.jpg');
+    background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.9) 100%), url('img/communityhubs.jpg');
+    background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.9) 100%), url('img/communityhubs.jpg');
+    background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.9) 100%), url('img/communityhubs.jpg');
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.9) 100%), url('img/communityhubs.jpg');
     background-size: cover;
 }
 .service-img {
