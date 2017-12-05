@@ -46,7 +46,7 @@ h1, h2, h3, h4 {
     margin: 10px 0;
 }
 ul {
-    padding: 1em;
+    padding: 0 1em;
 }
 .flex-box ul {
     padding: 1em;
@@ -172,6 +172,8 @@ ul {
     padding: 0 5px;
 }
 
+
+
 @media (min-width: 500px) {
     .container-grid {
         grid-template-columns: auto minmax(300px, 960px) auto;
@@ -183,7 +185,6 @@ ul {
     }
     .heading {
         grid-column: span 7;
-        background-color: 
     }
     .paragraph {
         grid-column: span 6;
@@ -253,6 +254,17 @@ ul {
     .flex-container {
         grid-column: 1 / span 12;
     }
+    .footer {
+        grid-column: 1 / span 3;
+        grid-row: 6;
+        background-color: darkcyan;
+        height: 300px;
+    }
+    
+    .footer-cont {
+        grid-column: 2 / span 1;
+        grid-row: 6;
+    }
 }
 
 @media (min-width: 960px) {
@@ -290,7 +302,7 @@ ul {
 .flex-box-title {
 	position: absolute;
 	bottom: 0px;
-	background-color: blue;
+	background-color: rgba(65,105,225, 0.9);
 	width: 90%;
 	margin: 0;
 	padding: 0 5%;
@@ -298,6 +310,7 @@ ul {
 }
 .flex-box-title h4 {
     margin: 0;
+    padding: 10px 0;
 }
 .flex-box-cont {
     position: absolute;
