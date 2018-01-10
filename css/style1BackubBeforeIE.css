@@ -61,7 +61,6 @@ ul {
 }
 
 .primary {
-    -webkit-transition: all .3s;
     transition: all .3s;
     background: #FFA500;
     border: 2px solid #4169E1;
@@ -71,13 +70,11 @@ ul {
 }
 
 .primary:hover {
-    -webkit-transition: all .3s;
     transition: all .3s;
     background-color: #4169E1;
     color: #FFA500;
 }
 .secondary {
-    -webkit-transition: all .3s;
     transition: all .3s;
     background: none;
     border: 2px solid #fff;
@@ -87,7 +84,6 @@ ul {
 }
 
 .secondary:hover {
-    -webkit-transition: all .3s;
     transition: all .3s;
     background-color: #fff;
     color: #4169E1;
@@ -113,28 +109,20 @@ ul {
 /*GRID*/
 .container-grid {
     display: grid;
-    display: -ms-grid;
     grid-template-columns: 10px 1fr 10px;
-    -ms-grid-columns: 10px 1fr 10px;
     grid-row-gap: 3em; 
 }
 
 .grid {
     display: grid;
-    display: -ms-grid;
     grid-template-columns: 1fr;
-    -ms-grid-columns: 1fr;
     grid-gap: 10px;
 }
 
 .head-grid {
-    display: grid;
-    grid-column: 2;
-    -ms-grid-column: 2;
-	-webkit-box-pack: center;
-	    -ms-flex-pack: center;
-            justify-content: center;
-            -ms-grid-row-align: center;            
+	display: grid;
+	grid-column: 2;
+	justify-content: center;
 	text-align: center;
     height: 100vh;
 	/*align-content: center;*/
@@ -150,8 +138,6 @@ ul {
 }
 .masthead {
     grid-column: 1 / span 3;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 3;
     background-image: url('img/graphicstock-multiethnic-group-of-smiling-young-friends-standing-and-showing-thumbs-up-over-blue-sky-background_SdHnVlqHne.jpg');
     background-position: center;
     background-repeat: no-repeat;
@@ -161,18 +147,13 @@ ul {
 
 .about-bg-margin {
     grid-column: 1 / span 1;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 1;
     background-color: #4169E1;
     grid-row: 5;
-    -ms-grid-row: 5;
 }
 .about-bg {
     grid-column: 1;
-    -ms-grid-column: 1;
     background-color: #4169E1;
     grid-row: 1;
-    -ms-grid-row: 1;
     height: auto;
     z-index: -10;
 }
@@ -180,20 +161,14 @@ ul {
 
 .about-content {
     grid-column: 1;
-    -ms-grid-column: 1;
     grid-row: 1;
-    -ms-grid-row: 1;
 }
 
 .special {
     grid-column: 1 / span 3;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 3;
     grid-row: 3;
-    -ms-grid-row: 3;
     height: 400px;
-    -ms-flex-line-pack: end;
-        align-content: end;
+    align-content: end;
     background-image: url('img/graphicstock-blurred-background-people-shopping-at-market-fair-in-sunny-day-blur-background-with-bokeh_STxcmVy9JW.jpg');
     background-position: center;
     background-size: cover;
@@ -202,10 +177,7 @@ ul {
 }
 .footer {
     grid-column: 1 / span 3;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 3;
     grid-row: 6;
-    -ms-grid-row: 6;
     background-color: darkcyan;
     padding-bottom: 200px;
 }
@@ -213,9 +185,6 @@ ul {
 .footer-cont {
     grid-column: 2 / span 1;
     grid-row: 6;
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 1;
-    -ms-grid-row: 6;
     padding-bottom: 10px;
     color: #fcfcfc;
     font-size: .9em;
@@ -263,7 +232,6 @@ ul {
 .submit input {
     display: inline;
     border: 1px solid #fff;
-    -webkit-transition: all .3s;
     transition: all .3s;
     background: none;
     border: 1px solid #fff;
@@ -286,68 +254,47 @@ ul {
 @media (min-width: 500px) {
     .container-grid {
         grid-template-columns: auto minmax(300px, 960px) auto;
-        -ms-grid-columns: 15% 70% 15%;
     }
     .grid {
         grid-template-columns: repeat(12, minmax(20px, 1fr));
-        -ms-grid-columns: 100%;
         grid-gap: 10px;
         grid-column: 2;
-        -ms-grid-column: 2;
     }
     .heading {
         grid-column: span 7;
-        -ms-grid-column: 1;
-        -ms-grid-row: 1;
     }
     .paragraph {
         grid-column: span 6;
-        -ms-grid-column: 1;
-        -ms-grid-row: 2;
     }
 
     .masthead {
         grid-column: 1 / span 3;
-        -ms-grid-column: 1;
-    }
-
-    .header-c2a {
-        -ms-grid-row-align: center;
     }
     .header-content {
         /*grid-column: 1 / span 12;*/
-        -ms-grid-column: 2;
         margin-top: 40px;
     }
     .home {
         grid-row: 2;
-        -ms-grid-row: 2;
         grid-column: 2 / span 1;
-        -ms-grid-column: 2;
-        -webkit-box-pack: left;
-            -ms-flex-pack: left;
-                justify-content: left;
+        justify-content: left;
     }
     .home-primary {
         grid-column: 1 / span 7;
-        -ms-grid-column: 1;
-        -ms-grid-column-span: 1;
-        -ms-grid-row: 1;
     }
     .home-secondary {
         grid-column: 9 / span 4;
-        -ms-grid-column: 1;
-        -ms-grid-row: 2;
     }
     .special {
         grid-row: 3;
-        -ms-grid-row: 3;
         height: 400px;
         grid-column: 1 / span 3;
-        -ms-grid-column: 1;
-        -ms-flex-line-pack: end;
-            align-content: end;
-        background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), color-stop(59%, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.9))), url('img/graphicstock-blurred-background-people-shopping-at-market-fair-in-sunny-day-blur-background-with-bokeh_STxcmVy9JW.jpg');
+        align-content: end;
+        background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.9) 100%), url('img/graphicstock-blurred-background-people-shopping-at-market-fair-in-sunny-day-blur-background-with-bokeh_STxcmVy9JW.jpg');
+        background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(59%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0.65))), url('img/graphicstock-blurred-background-people-shopping-at-market-fair-in-sunny-day-blur-background-with-bokeh_STxcmVy9JW.jpg');
+        background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.9) 100%), url('img/graphicstock-blurred-background-people-shopping-at-market-fair-in-sunny-day-blur-background-with-bokeh_STxcmVy9JW.jpg');
+        background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.9) 100%), url('img/graphicstock-blurred-background-people-shopping-at-market-fair-in-sunny-day-blur-background-with-bokeh_STxcmVy9JW.jpg');
+        background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.9) 100%), url('img/graphicstock-blurred-background-people-shopping-at-market-fair-in-sunny-day-blur-background-with-bokeh_STxcmVy9JW.jpg');
         background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.9) 100%), url('img/graphicstock-blurred-background-people-shopping-at-market-fair-in-sunny-day-blur-background-with-bokeh_STxcmVy9JW.jpg');
         background-position: center;
         background-size: cover;
@@ -357,66 +304,49 @@ ul {
     .special-content {
         text-align: center;
         grid-column: 1 / span 12;
-        -ms-grid-column: 1;
     }
     .groups {
         grid-row: 4;
-        -ms-grid-row: 4;
         grid-column: 2 / span 1;
-        -ms-grid-column: 2;
 
     }
     .about {
         grid-row: 5;
-        -ms-grid-row: 5;
         grid-column: 2 / span 1;
-        -ms-grid-column: 2;
 
     }
     .about-bg-margin {
         grid-column: 1;
-        -ms-grid-column: 1;
         background-color: #4169E1;
         grid-row: 5;
-        -ms-grid-row: 5;
     }
     .about-bg {
         grid-column: 1 / span 8;
-        -ms-grid-column: 1;
         background-color: #4169E1;
         grid-row: 1;
-        -ms-grid-row: 1;
         height: auto;
     }
     .about-content {
         grid-column: 2 / span 4;
         grid-row: 1;
-        -ms-grid-column: 1;
-        -ms-grid-row: 1;
     }
     .flex-container {
         grid-column: 1 / span 12;
-        -ms-grid-column: 1;
-        -ms-grid-row: 3;
     }
 
     .footer-links {
         grid-column: 1 / span 3;
-        -ms-grid-column: 1;
     }
     .footer-contact {
         grid-column: 8 / span 4;
-        -ms-grid-column: 1;
     }
     
     .footer-contact-1 {
         grid-column: 4 / span 4;
-        -ms-grid-column: 1;
     }
     
     .copyright {
         grid-column: 1 / span 12;
-        -ms-grid-column: 1;
         text-align: center;
         font-size: .8em;
     }
@@ -425,8 +355,6 @@ ul {
 @media (min-width: 960px) {
     .container-grid {
         grid-template-columns: auto 960px auto;
-        -ms-grid-columns: 15% 70% 15%;
-
     }
 }
 
@@ -434,34 +362,25 @@ ul {
  @media (min-width: 500px) and (max-width: 850px ) {
     .about-bg {
         grid-column: 1 / span 11;
-        -ms-grid-column: 1;
     }
     .footer-contact {
         grid-column: 1 / span 4;
-        -ms-grid-column: 1;
     }
     
     .footer-contact-1 {
         grid-column: 1 / span 4;
-        -ms-grid-column: 1;
     }
  }
 .flex-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: space-around;
     list-style: none;
     padding: 0;
 }
 .flex-box {
 	position: relative;
-	-webkit-box-flex: 1;
-	    -ms-flex-positive: 1;
-	        flex-grow: 1;
+	flex-grow: 1;
 	min-width: 280px;
 	max-width: 300px;
 	background-color: #fcfcfc;
@@ -490,9 +409,10 @@ ul {
     width: 86%;
     height: 90%;
     display: none;
-    -ms-flex-line-pack: center;
-        align-content: center;
+    align-content: center;
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(55, 55, 55, 0.8)), to(rgba(55, 55, 55, 0.8)));
+    background-image: -webkit-linear-gradient(top, rgba(55, 55, 55, 0.8), rgba(55, 55, 55, 0.8));
+    background-image: -moz-linear-gradient(top, rgba(55, 55, 55, 0.8), rgba(55, 55, 55, 0.8));
     background-image: linear-gradient(to bottom, rgba(55, 55, 55, 0.8), rgba(55, 55, 55, 0.8));
 }
 
@@ -519,39 +439,67 @@ ul {
 }
 
 .sport-clubs-bg {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), color-stop(59%, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.9))), url('img/sportclubs.jpg');
+    background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.9) 100%), url('img/sportclubs.jpg');
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(59%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0.65))), url('img/sportclubs.jpg');
+    background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.9) 100%), url('img/sportclubs.jpg');
+    background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.9) 100%), url('img/sportclubs.jpg');
+    background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.9) 100%), url('img/sportclubs.jpg');
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.9) 100%), url('img/sportclubs.jpg');
 	background-size: cover;
 }
 
 .learning-centers-bg {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), color-stop(59%, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.9))), url('img/learningcenters.jpg');
+    background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.9) 100%), url('img/learningcenters.jpg');
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(59%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0.65))), url('img/learningcenters.jpg');
+    background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.9) 100%), url('img/learningcenters.jpg');
+    background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.9) 100%), url('img/learningcenters.jpg');
+    background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.9) 100%), url('img/learningcenters.jpg');
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.9) 100%), url('img/learningcenters.jpg');
 	background-size: cover;
 }
 
 .church-groups-bg {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), color-stop(59%, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.9))), url('img/churchgroups.jpg');
+    background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.9) 100%), url('img/churchgroups.jpg');
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(59%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0.65))), url('img/churchgroups.jpg');
+    background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.9) 100%), url('img/churchgroups.jpg');
+    background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.9) 100%), url('img/churchgroups.jpg');
+    background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.9) 100%), url('img/churchgroups.jpg');
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.9) 100%), url('img/churchgroups.jpg');
 	background-size: cover;
 }
 .community-events-bg {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), color-stop(59%, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.9))), url('img/communityevents.jpg');
+    background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.9) 100%), url('img/communityevents.jpg');
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(59%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0.65))), url('img/communityevents.jpg');
+    background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.9) 100%), url('img/communityevents.jpg');
+    background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.9) 100%), url('img/communityevents.jpg');
+    background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.9) 100%), url('img/communityevents.jpg');
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.9) 100%), url('img/communityevents.jpg');
 	background-size: cover;
 }
 .community-hubs-bg {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), color-stop(59%, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.9))), url('img/communityhubs.jpg');
+    background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.9) 100%), url('img/communityhubs.jpg');
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(59%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0.65))), url('img/communityhubs.jpg');
+    background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.9) 100%), url('img/communityhubs.jpg');
+    background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.9) 100%), url('img/communityhubs.jpg');
+    background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.9) 100%), url('img/communityhubs.jpg');
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.9) 100%), url('img/communityhubs.jpg');
 	background-size: cover;
 }
 .enviro-groups-bg {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), color-stop(59%, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.9))), url('img/envirogroups.jpg');
+    background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.9) 100%), url('img/envirogroups.jpg');
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(59%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0.65))), url('img/envirogroups.jpg');
+    background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.9) 100%), url('img/envirogroups.jpg');
+    background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.9) 100%), url('img/envirogroups.jpg');
+    background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.9) 100%), url('img/envirogroups.jpg');
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.9) 100%), url('img/envirogroups.jpg');
 	background-size: cover;
 }
 #group-hover {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), color-stop(59%, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.9))), url('img/communityhubs.jpg');
+    background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.9) 100%), url('img/communityhubs.jpg');
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(59%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0.65))), url('img/communityhubs.jpg');
+    background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.9) 100%), url('img/communityhubs.jpg');
+    background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.9) 100%), url('img/communityhubs.jpg');
+    background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.9) 100%), url('img/communityhubs.jpg');
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.9) 100%), url('img/communityhubs.jpg');
     background-size: cover;
 }
@@ -561,16 +509,12 @@ ul {
 
 .header-c2a {
     background-color: rgba(65,105,225, 0.9);
-    margin: 10px auto;
+    margin: 10px;
     padding: 10px;
     width: 275px;
     justify-self: center;
-    -ms-grid-row-align: center;
-    -ms-flex-item-align: center;
-        align-self: center;
-        -ms-grid-column-align: center;
+    align-self: center;
     color: #FCFCFC;
-    text-align: center;
 }
 
 
