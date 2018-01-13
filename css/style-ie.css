@@ -10,6 +10,7 @@ body {
     margin: 0;
     padding: 0;
     letter-spacing: .05em;
+    background-color: red;
 }
 
 /* TYPOGRAPHY */
@@ -19,6 +20,7 @@ body {
     font-size: 20px;
     line-height: 1.5em;
     color: #3d3d3d;
+    background-color: red;
 }
 
 h1 {
@@ -32,7 +34,7 @@ h2 {
 }
 
 h1, h2, h3, h4 {
-    color: #FFA500;
+    color: pink;
     text-transform: uppercase;
     letter-spacing: .04em;
 }
@@ -108,29 +110,22 @@ ul {
 }
 /*GRID*/
 .container-grid {
-    display: grid;
     display: -ms-grid;
-    grid-template-columns: 10px 1fr 10px;
-    -ms-grid-columns: 20% 60% 20%;
+    -ms-grid-columns: 10px 1fr 10px;
     grid-row-gap: 3em; 
 }
 
 .grid {
-    display: grid;
     display: -ms-grid;
-    grid-template-columns: 1fr;
-    -ms-grid-columns: 100%;
+    -ms-grid-columns: 1fr;
     grid-gap: 10px;
     grid-column: 2;
-    -ms-grid-column: 2;
 }
 
 .head-grid {
-	display: grid;
-	/*display: -ms-grid;*/
+	display: -ms-grid;
 	grid-column: 2;
-	-ms-grid-column: 1;
-    justify-content: center;
+	justify-content: center;
 	text-align: center;
     height: 100vh;
 	/*align-content: center;*/
@@ -139,8 +134,6 @@ ul {
 .header-content h1 {
     color: #fff ;
     text-transform: uppercase;
-    -ms-grid-column-align: center;        
-    
 }
 .header-content h3 {
     color: #fff ;
@@ -148,8 +141,6 @@ ul {
 }
 .masthead {
     grid-column: 1 / span 3;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 3;
     background-image: url('img/graphicstock-multiethnic-group-of-smiling-young-friends-standing-and-showing-thumbs-up-over-blue-sky-background_SdHnVlqHne.jpg');
     background-position: center;
     background-repeat: no-repeat;
@@ -159,18 +150,13 @@ ul {
 
 .about-bg-margin {
     grid-column: 1 / span 1;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 1;
     background-color: #4169E1;
     grid-row: 5;
-    -ms-grid-row: 5;
 }
 .about-bg {
     grid-column: 1;
-    -ms-grid-column: 1;
     background-color: #4169E1;
     grid-row: 1;
-    -ms-grid-row: 1;
     height: auto;
     z-index: -10;
 }
@@ -178,17 +164,12 @@ ul {
 
 .about-content {
     grid-column: 1;
-    -ms-grid-column: 1;
     grid-row: 1;
-    -ms-grid-row: 1;
 }
 
 .special {
     grid-column: 1 / span 3;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 3;
     grid-row: 3;
-    -ms-grid-row: 3;
     height: 400px;
     align-content: end;
     background-image: url('img/graphicstock-blurred-background-people-shopping-at-market-fair-in-sunny-day-blur-background-with-bokeh_STxcmVy9JW.jpg');
@@ -199,20 +180,14 @@ ul {
 }
 .footer {
     grid-column: 1 / span 3;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 3;
     grid-row: 6;
-    -ms-grid-row: 6;
     background-color: darkcyan;
     padding-bottom: 200px;
 }
 
 .footer-cont {
     grid-column: 2 / span 1;
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 1;
     grid-row: 6;
-    -ms-grid-row: 6;
     padding-bottom: 10px;
     color: #fcfcfc;
     font-size: .9em;
@@ -275,13 +250,134 @@ ul {
 }
 
 
+@media (min-width: 768px) {
+    
+}
+
+@media (min-width: 500px) {
+    .container-grid {
+        -ms-grid-columns: auto minmax(300px, 960px) auto;
+    }
+    .grid {
+        -ms-grid-columns: repeat(12, minmax(20px, 1fr));
+        grid-gap: 10px;
+        grid-column: 2;
+    }
+    .heading {
+        grid-column: span 7;
+    }
+    .paragraph {
+        grid-column: span 6;
+    }
+
+    .masthead {
+        grid-column: 1 / span 3;
+    }
+    .header-content {
+        /*grid-column: 1 / span 12;*/
+        margin-top: 40px;
+    }
+    .home {
+        grid-row: 2;
+        grid-column: 2 / span 1;
+        justify-content: left;
+    }
+    .home-primary {
+        grid-column: 1 / span 7;
+    }
+    .home-secondary {
+        grid-column: 9 / span 4;
+    }
+    .special {
+        grid-row: 3;
+        height: 400px;
+        grid-column: 1 / span 3;
+        align-content: end;
+        background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.9) 100%), url('img/graphicstock-blurred-background-people-shopping-at-market-fair-in-sunny-day-blur-background-with-bokeh_STxcmVy9JW.jpg');
+        background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(59%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0.65))), url('img/graphicstock-blurred-background-people-shopping-at-market-fair-in-sunny-day-blur-background-with-bokeh_STxcmVy9JW.jpg');
+        background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.9) 100%), url('img/graphicstock-blurred-background-people-shopping-at-market-fair-in-sunny-day-blur-background-with-bokeh_STxcmVy9JW.jpg');
+        background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.9) 100%), url('img/graphicstock-blurred-background-people-shopping-at-market-fair-in-sunny-day-blur-background-with-bokeh_STxcmVy9JW.jpg');
+        background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.9) 100%), url('img/graphicstock-blurred-background-people-shopping-at-market-fair-in-sunny-day-blur-background-with-bokeh_STxcmVy9JW.jpg');
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.9) 100%), url('img/graphicstock-blurred-background-people-shopping-at-market-fair-in-sunny-day-blur-background-with-bokeh_STxcmVy9JW.jpg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }  
+
+    .special-content {
+        text-align: center;
+        grid-column: 1 / span 12;
+    }
+    .groups {
+        grid-row: 4;
+        grid-column: 2 / span 1;
+    }
+    .about {
+        grid-row: 5;
+        grid-column: 2 / span 1;
+    }
+    .about-bg-margin {
+        grid-column: 1;
+        background-color: #4169E1;
+        grid-row: 5;
+    }
+    .about-bg {
+        grid-column: 1 / span 8;
+        background-color: #4169E1;
+        grid-row: 1;
+        height: auto;
+    }
+    .about-content {
+        grid-column: 2 / span 4;
+        grid-row: 1;
+    }
+    .flex-container {
+        grid-column: 1 / span 12;
+    }
+
+    .footer-links {
+        grid-column: 1 / span 3;
+    }
+    .footer-contact {
+        grid-column: 8 / span 4;
+    }
+    
+    .footer-contact-1 {
+        grid-column: 4 / span 4;
+    }
+    
+    .copyright {
+        grid-column: 1 / span 12;
+        text-align: center;
+        font-size: .8em;
+    }
+}
+
+@media (min-width: 960px) {
+    .container-grid {
+        -ms-grid-columns: auto 960px auto;
+    }
+}
+
+
+ @media (min-width: 500px) and (max-width: 850px ) {
+    .about-bg {
+        grid-column: 1 / span 11;
+    }
+    .footer-contact {
+        grid-column: 1 / span 4;
+    }
+    
+    .footer-contact-1 {
+        grid-column: 1 / span 4;
+    }
+ }
 .flex-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     list-style: none;
     padding: 0;
-    -ms-grid-row: 3;
 }
 .flex-box {
 	position: relative;
@@ -415,200 +511,9 @@ ul {
 .header-c2a {
     background-color: rgba(65,105,225, 0.9);
     margin: 10px;
-    margin: 0 auto;
     padding: 10px;
     width: 275px;
     justify-self: center;
     align-self: center;
     color: #FCFCFC;
-
 }
-@media (min-width: 768px) {
-    
-}
-
-
-@media (min-width: 500px) {
-    .container-grid {
-        grid-template-columns: auto minmax(300px, 960px) auto;
-        -ms-grid-columns: 20% 60% 20%;
-    }
-    .grid {
-        grid-template-columns: repeat(12, minmax(20px, 1fr));
-        -ms-grid-columns: 20% 20% 20% 20% 20%;
-        grid-gap: 10px;
-        grid-column: 2;
-        -ms-grid-column: 2;
-    }
-    .heading {
-        grid-column: span 7;
-        -ms-grid-column-span: 7;
-    }
-    .paragraph {
-        grid-column: span 10;
-        -ms-grid-column-span: 6;
-    }
-
-    .masthead {
-        grid-column: 1 / span 3;
-        -ms-grid-column: 1;
-        -ms-grid-column-span: 3;
-    }
-    .header-content {
-        /*grid-column: 1 / span 12;*/
-        margin-top: 40px;
-        -ms-grid-row-align: center;
-    }
-    .home {
-        grid-row: 2;
-        -ms-grid-row: 2;
-        grid-column: 2 / span 1;
-        -ms-grid-column: 2;
-        -ms-grid-column-span: 1;
-        justify-content: left;
-    }
-    .home-primary {
-        grid-column: 1 / span 7;
-        -ms-grid-column: 1;
-        -ms-grid-column-span: 3;
-    }
-    .home-secondary {
-        grid-column: 9 / span 4;
-        -ms-grid-column: 4;
-        -ms-grid-column-span: 2;
-    }
-    .special {
-        grid-row: 3;
-        -ms-grid-row: 3;
-        height: 400px;
-        grid-column: 1 / span 3;
-        -ms-grid-column: 1;
-        -ms-grid-column-span: 3;
-        align-content: end;
-        background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.9) 100%), url('img/graphicstock-blurred-background-people-shopping-at-market-fair-in-sunny-day-blur-background-with-bokeh_STxcmVy9JW.jpg');
-        background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(59%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0.65))), url('img/graphicstock-blurred-background-people-shopping-at-market-fair-in-sunny-day-blur-background-with-bokeh_STxcmVy9JW.jpg');
-        background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.9) 100%), url('img/graphicstock-blurred-background-people-shopping-at-market-fair-in-sunny-day-blur-background-with-bokeh_STxcmVy9JW.jpg');
-        background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.9) 100%), url('img/graphicstock-blurred-background-people-shopping-at-market-fair-in-sunny-day-blur-background-with-bokeh_STxcmVy9JW.jpg');
-        background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.9) 100%), url('img/graphicstock-blurred-background-people-shopping-at-market-fair-in-sunny-day-blur-background-with-bokeh_STxcmVy9JW.jpg');
-        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.9) 100%), url('img/graphicstock-blurred-background-people-shopping-at-market-fair-in-sunny-day-blur-background-with-bokeh_STxcmVy9JW.jpg');
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        -ms-grid-row-align: end;
-    }  
-
-    .special-content {
-        text-align: center;
-        grid-column: 1 / span 12;
-        -ms-grid-column: 1;
-        -ms-grid-column-span: 5;
-        -ms-grid-row: 1;
-        -ms-grid-row-align: end;  
-        -ms-flex-align: end;              
-    }
-
-    .groups {
-        grid-row: 4;
-        -ms-grid-row: 4;
-        grid-column: 2 / span 1;
-        -ms-grid-column: 2;
-        -ms-grid-column-span: 1;
-    }
-    .heading {
-        -ms-grid-row: 1;
-    }
-    .paragraph {
-        -ms-grid-row: 2;
-    }
-    .about {
-        grid-row: 5;
-        -ms-grid-row: 5;
-        grid-column: 2 / span 1;
-        -ms-grid-column: 2;
-        -ms-grid-column-span: 1;
-    }
-    .about-bg-margin {
-        grid-column: 1;
-        -ms-grid-column: 1;
-        background-color: #4169E1;
-        grid-row: 5;
-        -ms-grid-row: 5;
-    }
-    .about-bg {
-        grid-column: 1 / span 8;
-        -ms-grid-column: 1;
-        -ms-grid-column-span: 4;
-        background-color: #4169E1;
-        grid-row: 1;
-        -ms-grid-row: 1;
-        height: auto;
-    }
-    .about-content {
-        grid-column: 2 / span 4;
-        -ms-grid-column: 2;
-        -ms-grid-column-span: 3;
-        grid-row: 1;
-        -ms-grid-row: 1;
-    }
-    .flex-container {
-        grid-column: 1 / span 12;
-        -ms-grid-column: 1;
-        -ms-grid-column-span: 5;
-        -ms-grid-row:3;
-    }
-
-    .footer-links {
-        grid-column: 1 / span 3;
-        -ms-grid-column: 1;
-    }
-    .footer-contact {
-        grid-column: 8 / span 4;
-        -ms-grid-column: 5;
-    }
-    
-    .footer-contact-1 {
-        grid-column: 4 / span 4;
-        -ms-grid-column: 3;
-        -ms-grid-column-span: 2;
-    }
-    
-    .copyright {
-        grid-column: 1 / span 12;
-        -ms-grid-column: 1;
-        -ms-grid-column-span: 5;
-        -ms-grid-row: 2;
-        text-align: center;
-        font-size: .8em;
-    }
-}
-
-@media (min-width: 960px) {
-    .container-grid {
-        grid-template-columns: auto 960px auto;
-        -ms-grid-columns: 20% 60% 20%;
-    }
-}
-
-
- @media (min-width: 500px) and (max-width: 850px ) {
-    .about-bg {
-        grid-column: 1 / span 11;
-        -ms-grid-column: 1;
-        -ms-grid-column-span: 5;
-    }
-    .footer-contact {
-        grid-column: 1 / span 4;
-        -ms-grid-column: 1;
-        -ms-grid-column-span: 1;
-        -ms-grid-row: 2;        
-    }
-    
-    .footer-contact-1 {
-        grid-column: 1 / span 4;
-        -ms-grid-column: 1;
-        -ms-grid-column-span: 4;
-        -ms-grid-row: 1;
-    }
- }
-
-
