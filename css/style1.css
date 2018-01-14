@@ -150,7 +150,7 @@ ul {
     grid-column: 1 / span 3;
     -ms-grid-column: 1;
     -ms-grid-column-span: 3;
-    background-image: url('img/graphicstock-multiethnic-group-of-smiling-young-friends-standing-and-showing-thumbs-up-over-blue-sky-background_SdHnVlqHne.jpg');
+    background-image: url('img/header.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -191,7 +191,7 @@ ul {
     -ms-grid-row: 3;
     height: 400px;
     align-content: end;
-    background-image: url('img/graphicstock-blurred-background-people-shopping-at-market-fair-in-sunny-day-blur-background-with-bokeh_STxcmVy9JW.jpg');
+    background-image: url('img/marketbanner.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -485,12 +485,12 @@ ul {
         -ms-grid-column: 1;
         -ms-grid-column-span: 3;
         align-content: end;
-        background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.9) 100%), url('img/graphicstock-blurred-background-people-shopping-at-market-fair-in-sunny-day-blur-background-with-bokeh_STxcmVy9JW.jpg');
-        background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(59%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0.65))), url('img/graphicstock-blurred-background-people-shopping-at-market-fair-in-sunny-day-blur-background-with-bokeh_STxcmVy9JW.jpg');
-        background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.9) 100%), url('img/graphicstock-blurred-background-people-shopping-at-market-fair-in-sunny-day-blur-background-with-bokeh_STxcmVy9JW.jpg');
-        background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.9) 100%), url('img/graphicstock-blurred-background-people-shopping-at-market-fair-in-sunny-day-blur-background-with-bokeh_STxcmVy9JW.jpg');
-        background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.9) 100%), url('img/graphicstock-blurred-background-people-shopping-at-market-fair-in-sunny-day-blur-background-with-bokeh_STxcmVy9JW.jpg');
-        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.9) 100%), url('img/graphicstock-blurred-background-people-shopping-at-market-fair-in-sunny-day-blur-background-with-bokeh_STxcmVy9JW.jpg');
+        background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.9) 100%), url('img/marketbanner.jpg');
+        background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(59%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0.65))), url('img/marketbanner.jpg');
+        background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.9) 100%), url('img/marketbanner.jpg');
+        background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.9) 100%), url('img/marketbanner.jpg');
+        background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.9) 100%), url('img/marketbanner.jpg');
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.9) 100%), url('img/marketbanner.jpg');
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;

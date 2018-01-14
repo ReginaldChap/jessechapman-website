@@ -1,4 +1,4 @@
-<html>
+<!DOCTYPE html>
 
 <head>
     <style>
@@ -25,12 +25,12 @@
             <div class="header-c2a">
                 <p>Digital marketing to promote your cause.
                     <br />See how I can help your community group grow and stay connected.</p>
-                <button class="btn secondary">Learn More</button>
+                <a href="#home"><button class="btn secondary">Learn More</button></a>
             </div>
             <!--.header-c2a-->
         </header>
         <!--.masthead-->
-        <section class="home grid">
+        <section id="home" name="home" class="home grid">
             <div class="home-primary">
                 <h2>How I can help.</h2>
                 <p>Digital marketing can be the most cost effective way to promote your community, as well as a way to gain
@@ -51,7 +51,7 @@
                     <li>Social media marketing</li>
                 </ul>
                 <p>Contact me today for a no obligation discussion about how an online presnence can help your group.</p>
-                <button class="btn primary">Contact me now!</button>
+                <a href="#contact"><button class="btn primary">Contact me now!</button></a>
             </div>
             <!--.home-secondary-->
         </section>
@@ -204,7 +204,7 @@
 
         </footer><!--.footer -->
         <div class="footer-cont grid">
-            <div class="footer-links">   
+           <!-- <div class="footer-links">   
             <h4>Links</h4>
             <ul>
                 <li>Link</li>
@@ -212,27 +212,30 @@
                 <li>Link</li>
                 <li>Link</li>
             </ul>
-        </div>
-        <div class="footer-contact-1">
+        </div>-->
+        <div id="contact" name="contact" class="footer-contact-1">
                 <h4>Contact</h4>
                 <p>P: 0438 604 786</p>
                 <p>E: info@viccommunitysites.com</p>
                 <p>Altona Meadows, Victoria.</p>
             </div> 
         <div class="footer-contact">   
-            
-            <form>
+            <form action="contactform.php" method="post">
                 <div class="form-item">
                 <label class="label">Name:</label>
-                <input type="text" size="30">
+                <input type="text" name="name" size="30">
             </div>
                 <div class="form-item">
                 <label class="label">Email:</label>
-                <input type="email" size="30"> 
+                <input type="email" name="email" size="30"> 
+            </div>
+                <div class="form-item">
+                <label class="label">Phone:</label>
+                <input type="text" name="phone" size="30"> 
             </div>
                 <div class="form-item">
                 <label class="label">Message:</label>
-                <textarea cols="23"></textarea>
+                <textarea cols="23" name="message"></textarea>
                 
             </div>
             <div class="submit">
@@ -240,7 +243,7 @@
         </div>
             </form>
         </div> 
-        <div class="copyright"> Copyright &copy; 2017 Jesse Chapman</div>
+        <div class="copyright"> Copyright &copy; 2018 Community Group Sites</div>
             </div>
     </div>
     <!--.container-grid-->
