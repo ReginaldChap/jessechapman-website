@@ -19,8 +19,8 @@
         <header class="masthead head-grid">
             <!--100vh 100%w-->
             <div class="header-content">
-                <h1>Victoria Community Sites</h1>
-                <h3>Websites for Community Groups</h3>
+                <h1>Community Group Sites</h1>
+                <h3>Affordable Websites for Community Groups</h3>
             </div>
             <div class="header-c2a">
                 <p>Digital marketing to promote your cause.
