@@ -65,20 +65,20 @@ function test_input($data) {
   }
 
   $err = $nameErr . $emailErr . $phoneErr . $messageErr;
-
-
-?> 
-
-<?php
-// The message
+if (empty($err)) {
+    // The message
 $emailMessage = "Name: " . $name . "\r\n Email: " . $email . "\r\n Phone: " . $phone . "\r\n Message: " . $message;
 
 // In case any of our lines are larger than 70 characters, we should use wordwrap()
 $emailMessage = wordwrap($emailMessage, 70, "\r\n");
 
 // Send
-mail('jesse@jessechapman.com.au', 'New Web Enquiry', $emailMessage, "From: website.com.au");
-?>
+mail('jesse@jessechapman.com.au', 'New Web Enquiry', $emailMessage, "From: CommunityGroupSites");
+} else {
+
+};
+
+?> 
 
     <div class="container-grid">
         <section id="home" name="home" class="home grid">
@@ -110,7 +110,7 @@ mail('jesse@jessechapman.com.au', 'New Web Enquiry', $emailMessage, "From: websi
         <div id="contact" name="contact" class="footer-contact-1">
                 <h4>Contact</h4>
                 <p>P: 0438 604 786</p>
-                <p>E: info@viccommunitysites.com</p>
+                <p>E: info@communitygroupsites.com.au</p>
                 <p>Altona Meadows, Victoria.</p>
             </div> 
         <div class="footer-contact">   

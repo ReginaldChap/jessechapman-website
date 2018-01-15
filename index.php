@@ -216,7 +216,7 @@
         <div id="contact" name="contact" class="footer-contact-1">
                 <h4>Contact</h4>
                 <p>P: 0438 604 786</p>
-                <p>E: info@viccommunitysites.com</p>
+                <p>E: info@communitygroupsites.com.au</p>
                 <p>Altona Meadows, Victoria.</p>
             </div> 
         <div class="footer-contact">   
