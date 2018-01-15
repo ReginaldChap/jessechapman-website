@@ -77,7 +77,7 @@ $emailMessage = "Name: " . $name . "\r\n Email: " . $email . "\r\n Phone: " . $p
 $emailMessage = wordwrap($emailMessage, 70, "\r\n");
 
 // Send
-mail('jesse@jessechapman.com.au', 'New Web Enquiry', $emailMessage);
+mail('jesse@jessechapman.com.au', 'New Web Enquiry', $emailMessage, "From: website.com.au");
 ?>
 
     <div class="container-grid">
@@ -88,7 +88,7 @@ mail('jesse@jessechapman.com.au', 'New Web Enquiry', $emailMessage);
         echo "<p class=\"paragraph\">I will be in contact with you soon.<a href=\"index.php\"><br /><br /><button class=\"btn primary\">Back to home</button></a></p>";
             } else {
                 echo "<h3 class=\"heading\">There was a problem with your submission.</h3>";
-                echo "<p class=\"paragraph\">Please fix the following errors: " . $nameErr . $emailErr . $phoneErr . $messageErr; 
+                echo "<p class=\"paragraph\">Please fix the following errors: " . $nameErr . " " . $emailErr . " " . $phoneErr . " " . $messageErr; 
             }
             ?>
         </section>
@@ -115,7 +115,7 @@ mail('jesse@jessechapman.com.au', 'New Web Enquiry', $emailMessage);
             </div> 
         <div class="footer-contact">   
             
-            <form action="contact-form.php" method="POST">
+            <form action="<?php echo htmlentities($_SERVER['PHP_SELF']); ?>" method="POST">
                 <div class="form-item">
                 <label class="label">Name:</label>
                 <input type="text" name="name"  size="30" value="<?php echo $name;?>">
